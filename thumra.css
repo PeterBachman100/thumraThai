@@ -1,0 +1,268 @@
+* {
+	padding: 0;
+	margin: 0;
+	font-weight: 400;
+	box-sizing: border-box;
+}
+
+:root {
+	font-size: 16px;
+}
+
+body {
+	background-color: #001b00;
+	font-family: 'Poppins', sans-serif;
+	background-image: url(file:///Users/peterbachman/Documents/Nova/Projects/ThumraThai/black-thread.png);
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-family: 'Montserrat Alternates', sans-serif;
+	color: #001b00;
+}
+h2 {
+	font-size: 2rem;
+	font-weight: 200;
+	width: 100%;
+	text-align: center;
+	padding: 1rem;
+	border-bottom: 1px solid #001b00;
+}
+h3 {
+	font-size: 1rem;
+	font-weight: 600;
+}
+
+li {
+	list-style-type: none;
+}
+
+a {
+	color: #4e9d15;
+	transition: 0.3s ease;
+}
+
+a:hover {
+	color: #2c5c25;
+}
+
+.wrapper {
+	background-color: #f8fff8;
+	width: auto;
+	max-width: 1600px;
+	margin: auto;
+	box-shadow: 0px 0px 20px 20px black;
+}
+
+.wrapper.home {
+	background-color: black;
+}
+main {
+	position: relative;
+	z-index: 1;
+	width: 100%;
+	max-width: 1400px;
+	margin: auto;
+	display: flex;
+	flex-direction: column;
+	gap: 5rem;
+	padding-bottom: 200px;
+}
+
+nav {
+	position: relative;
+	width: 100%;
+	height: 125px;
+	display: flex;
+	align-items: center;
+	justify-content: space-evenly;
+	color: #ffffff;
+	z-index: 10;
+}
+
+nav a {
+	font-size: 1.75rem;
+	flex-grow: 1;
+	flex-basis: 100px;
+	text-align: center;
+	color: #ffffff;
+	text-decoration: none;
+	letter-spacing: 0.1rem;
+	text-shadow:0 0 20px black;
+}
+
+nav .logo {
+	height: 200px;
+	background-color: rgba(0, 0, 0, 0.761);
+	padding: 1rem;
+	transform: translateY(65.5px);
+	box-shadow: 0px 0px 10px #00000070;
+
+}
+
+#footer-nav {
+	position: relative;
+	bottom: 125px;
+}
+
+.header-image {
+	background-image: url(ioannis-sarantis-Y11iTVE2DFA-unsplash.jpg);
+	background-size: cover;
+	background-position: bottom;
+	height: 50vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: relative;
+	top: -125px;
+}
+
+.header-image.lunch {
+	background-image: url(jane-IkaxonGjwSY-unsplash.jpg);
+}
+
+.header-image.hours {
+	background-image: url(arty-lmnQJk5mumo-unsplash.jpg);
+	background-position: top;
+}
+
+.header-image.about {
+	background-image: url(wall.jpg);
+	background-position: bottom;
+}
+
+.header-image.home {
+	background-image: url(ioannis-sarantis-Y11iTVE2DFA-unsplash.jpg);
+	height: 100vh;
+	display: flex;
+	flex-direction: column;
+}
+
+.header-image.home .slogan {
+	color: white;
+	font-family: 'Poppins', sans-serif;
+	text-align: center;
+	font-size: 2rem;
+	padding: 2rem;
+	background-color: rgba(0, 0, 0, 0.761);
+	max-width: 95%;
+	box-shadow: 0px 0px 10px #00000070;
+}
+
+.header-image .title {
+	color: white;
+	text-shadow: 0 0 20px black;
+	font-size: 5rem;
+	font-weight: 600;
+	letter-spacing: 0.5rem;
+	text-align: center;
+}
+
+.gallery {
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(20%, 1fr)); /* Adjust the column width as needed */
+	gap: 10px;
+	margin: 20px;
+}
+
+/* Style individual gallery items */
+.gallery-item {
+	overflow: hidden;
+}
+
+.gallery-item img {
+	max-width: 100%;
+	height: 100%;
+	object-fit: cover;
+	display: block;
+	transition: transform 0.2s;
+}
+
+/* Add a hover effect to the images */
+.gallery-item:hover img {
+	transform: scale(1.1);
+}
+.menu-section {
+	display: flex;
+	flex-direction: column;
+	padding: 1rem;
+	align-items: center;
+	gap: 3rem;
+}
+
+.items {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-evenly;	
+	gap: 4rem;
+}
+
+.item {
+	display: flex;
+	flex-direction: column;
+	width: calc(33.3% - 2.66rem);
+	align-items: center;
+	gap: 0.5rem;
+}
+
+@media screen and (max-width: 1200px) {
+	.item {
+		width: calc(50% - 2rem);
+	}
+}
+
+@media screen and (max-width: 700px) {
+	.item {
+		width: calc(100% - 2rem);
+	}
+}
+
+.name {
+	text-align: center;
+	letter-spacing: 1px;
+}
+
+.description {
+	text-align: center;
+}
+
+.dietary-restriction {
+	color: #4e9d16;
+	font-weight: 600;
+}
+
+.price, li {
+	font-weight: 200;
+	font-size: 1rem;
+	color: black;
+	letter-spacing: 0.5px;
+	text-align: center;
+}
+
+p:empty {
+	display: none;
+}
+
+.button {
+	background-color: #4e9d16;
+	padding: 1rem 2rem;
+	color: rgb(255, 255, 255);
+	text-decoration: none;
+	font-size: 1.125rem;
+	font-weight: 400;
+	letter-spacing: 3px;
+	box-shadow: 0px 0px 5px #00000070;
+	transition: 0.3s ease;
+}
+
+.button:hover {
+	background-color: #dfe9de;
+	box-shadow: none;
+}
+.cta-call {
+	position: fixed;
+	bottom: 25px;
+	left: 50%;
+	transform: translateX(-50%);
+	text-align: center;
+	z-index: 10;
+}
