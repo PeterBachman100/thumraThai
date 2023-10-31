@@ -12,7 +12,7 @@
 body {
 	background-color: #001b00;
 	font-family: 'Poppins', sans-serif;
-	background-image: url(file:///Users/peterbachman/Documents/Nova/Projects/ThumraThai/black-thread.png);
+	background-image: url(black-thread.png);
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -310,5 +310,16 @@ p:empty {
 	
 	.button {
 		padding: 0.5rem;
+	}
+	.header-image.home .slogan {
+		font-size: 0.75rem;
+		padding: 0.5rem;
+		max-width: 95%;
+		margin-top: 1rem;
+	}
+	
+	.header-image .title {
+		font-size: 2.5rem;
+		letter-spacing: 0.3rem;
 	}
 }
